@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontend</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg shadow sticky-top py-4 px-4" style="background-color: #dde5b6;">
+    <div class="container-fluid">
+      <!-- Brand on the left -->
+      <a class="navbar-brand me-auto" href="#">Raj Mehta</a>
+  
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Nav links on the right -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link mx-4 active" aria-current="page" href="#about">About</a>
+          <a class="nav-link mx-4" href="#portfolio">Portfolio</a>
+          <a class="nav-link mx-4" href="#instagram">Social Media</a>
+          <a class="nav-link mx-4" href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>  
+  
+    <div class="container-fluid py-3" class="main">
+
+        <!-- about  -->
+        <div class="container py-5 section-offset" id="about" >
+            <div class="row">
+                <div class="col-12">
+                    <h1 style="font-weight: bolder; font-size: 2.2rem;" >About Me</h1>
+                </div>
+                <div class="col-md-6 py-4">
+                    <div class="image">
+                        <!-- image added wih css -->
+                    </div>
+                </div>
+                <div class="col-md-6 py-4" >
+                    <section class="mt-4">
+                        <p class="fade-in-on-scroll">
+                            I'm Raj Mehta, a passionate photographer with a love for capturing life's quiet, fleeting
+                            moments. Whether it’s golden light spilling over a landscape or a candid smile at a wedding,
+                            I’m drawn to authenticity and emotion in every frame.
+                            
+                        </p>
+                        <p class="fade-in-on-scroll">
+                            I'm Raj Mehta, a passionate photographer with a love for capturing life's quiet, fleeting
+                            moments. Whether it’s golden light spilling over a landscape or a candid smile at a wedding,
+                            I’m drawn to authenticity and emotion in every frame.
+                        </p>
+                        <p class="fade-in-on-scroll">
+                            Whether it’s golden light spilling over a landscape or a candid smile at a wedding,I’m drawn to authenticity and emotion in every frame.<span class="outline-heart"></span>
+                       
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- portfolio  -->
+        <div class="container py-5 section-offset" id="portfolio">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h1 style="font-weight: bolder;  font-size: 2.2rem;">Portfolio</h1>
+                </div>
+                <div class="col-12 pt-3">
+                    <ul class="list-unstyled d-flex justify-content-center gap-4 flex-wrap mb-4">
+                        <li class="portfolio-item active">Animals</li>
+                        <li class="portfolio-item">Wedding</li>
+                        <li class="portfolio-item">Birds</li>
+                      </ul>                      
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Repeat for each card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/animals1.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/animals2.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/animals3.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/animals4.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/animals5.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/animals6.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact us -->
+        <div class="container py-5 section-offset" id="contact">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <h2 class="mb-4" style="font-weight: bolder;  font-size: 2.2rem;">Contact Me</h2>
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="e.g. Wedding Photography">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Tell me about your event or project..."></textarea>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-dark px-5">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

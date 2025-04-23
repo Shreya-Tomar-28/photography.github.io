@@ -1,0 +1,101 @@
+body {
+  background: #f0ead2;
+  text-align: center;
+  font-family: Papyrus, Harrington, Wisp, Arkana, Rivendell;
+}
+
+/* when clicked on navbar items */
+.section-offset {
+  scroll-margin-top: 100px; /* adjust based on navbar height */
+}
+
+.navbar-brand{
+  font-family: Papyrus, Harrington, Wisp, Arkana, Rivendell;
+  font-size: 2.2rem;
+  font-weight: bold;   
+}
+
+.nav-link{
+  font-family: Papyrus, Harrington, Wisp, Arkana, Rivendell;
+  font-size: 1.2rem;
+  font-weight:bolder;
+}
+
+/* image of about  */
+.image {
+  background-image: url('/images/mario-ame-7kT8IQI8KLo-unsplash-removebg-preview.png'); /* adjust the path to your image */
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 100%; /* or a fixed height like 300px if your container has no height */
+  min-height: 300px;
+  border-radius: 8px; /* optional: for rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* <-- shadow here */  
+}
+
+.card-img-top {
+  max-height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* portfolio image hover and fade effect  */
+.card-img-top {
+  filter: brightness(50%) saturate(80%) contrast(90%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.card-img-top:hover {
+  filter: brightness(100%);
+  transform: scale(1.03);
+}
+
+/* heart emoji  */
+.outline-heart::before {
+  content: "♡"; /* Unicode outlined heart */
+  color: black;
+  font-size: 20px;
+}
+
+/* about text fades while scrolling  */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* giving styles to li elements in portfolio */
+.portfolio-item {
+  font-size: 1.3rem;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.portfolio-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.portfolio-item.active {
+  color: #000;
+  font-weight: bold;
+}
+
+.portfolio-item.active::after {
+  width: 100%;
+}
+
