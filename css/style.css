@@ -23,7 +23,7 @@ body {
 
 /* image of about  */
 .image {
-  background-image: url('images/mario-ame-7kT8IQI8KLo-unsplash-removebg-preview.png'); /* adjust the path to your image */
+  background-image: url('../images/mario-ame-7kT8IQI8KLo-unsplash-removebg-preview.png'); /* adjust the path to your image */
   background-size:cover;
   background-position: center;
   background-repeat:no-repeat;
